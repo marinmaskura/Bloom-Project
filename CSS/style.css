@@ -1,0 +1,890 @@
+:root{
+    --white : #ffffff;
+    --themecolor : #753d9d;
+    --fontcolor : #0d113d;
+    --bottom_border_color: #e0e0e0;
+    --font_family_montserrat : 'Montserrat', sans-serif;
+}
+/* all common css start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    /* background: pink; */
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.img_fluid{
+    max-width: 100%;
+    height: auto;
+}
+.w_100{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    font-family: var(--font_family_montserrat);
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font_family_montserrat);
+    color: var(--fontcolor);
+    font-weight: 400;
+}
+p{
+    font-family: var(--font_family_montserrat);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--fontcolor);
+}
+.common_btn_one{
+    color: #ffffff;
+    font-family: var(--font_family_montserrat);
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid var(--white);
+    padding: 24px 73px;
+    background: transparent;
+    border-radius: 5px;
+}
+.common_btn_two{
+    background: var(--white);
+    border: 1px solid var(--fontcolor);
+    color: var(--fontcolor);
+    font-family: var(--font_family_montserrat);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 24px 73px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.common_btn{
+    color: #ffffff;
+    font-family: var(--font_family_montserrat);
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    padding: 24px 73px;
+    background: var(--themecolor);
+    border-radius: 5px;
+}
+/* all common css end */
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+ */
+
+/*===================================================
+                Nav Part Start
+=================================================== */
+nav{
+    /* background: #4b997f; */
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    
+}
+.main_manu{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+}
+.main_manu .logo{
+    width: 185px;
+    /* background: gray; */
+}
+.main_manu .manu{
+    width: 985px;
+    /* background: pink; */
+}
+.main_manu .manu ul {
+    /* background: #3e3e5f; */
+    text-align: right;
+}
+.main_manu .manu ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.main_manu .manu ul li a{
+    transition: all linear .3s;
+}
+.main_manu .manu ul li a:hover{
+    color: var(--themecolor);
+    font-family: var(--font_family_montserrat);
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.main_manu .manu ul li a.active{
+    color: var(--themecolor);
+    font-family: var(--font_family_montserrat);
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+/* ===================================================
+                Nav Part End
+=================================================== */
+/* ===================================================
+                Banner Part Start
+=================================================== */
+#banner{
+    background: url(../images/Banner.jpg) no-repeat center/cover;
+}
+#banner .overlay{
+    background: rgba(25, 11, 35, 0.5);
+    padding-top: 245px;
+    padding-bottom: 185px;
+}
+.banner_info{
+    /* width: 975px; */
+    margin: 0 auto;
+    /* background: #4b997f; */
+    text-align: center;
+}
+.banner_info h1{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+.banner_info h1 span{
+    color: var(--themecolor);
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+.banner_info p{
+    width: 975px;
+    margin: 0 auto;
+    padding: 0 42px 60px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.banner_info .button{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+}
+/* ===================================================
+                Banner Part End
+=================================================== */
+/* ===================================================
+                creative_agency Part Start
+=================================================== */
+#creative_agency{
+    padding-top: 80px;
+    padding-bottom: 68px;
+    border-bottom: 1px solid var(--bottom_border_color);
+}
+.creative_agency_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 80px; */
+}
+.creative_agency_container .image{
+    max-width: 457px;
+    position: relative;
+    border-radius: 8px;
+}
+.creative_agency_container .image .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(17, 17, 17, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+}
+.creative_agency_container .info{
+    max-width: 668px;
+}
+.creative_agency_container .info h3{
+    padding: 0;
+    font-size: 36px;
+    position: relative;
+    padding-left: 20px;
+}
+.creative_agency_container .info h3::after{
+    content: "";
+    width: 82px;
+    height: 5px;
+    background: var(--themecolor);
+    position: absolute;
+    bottom: 0%;
+    right: 94%;
+    transform: translateX(-50%);
+    rotate: calc(90deg);
+    border-radius: 30px;
+}
+.creative_agency_container .info h3 .are{
+    font-size: 36px;
+    font-weight: 800;
+}
+.creative_agency_container .info h3 .bloom{
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--themecolor);
+}
+.creative_agency_container .info h3 .creative{
+    font-size: 36px;
+    display: block;
+}
+.creative_agency_container .info p {
+    padding-bottom: 50px;
+    padding-top: 44px;
+    padding-right: 12px;
+}
+/* ===================================================
+                creative_agency Part End
+=================================================== */
+/* ===================================================
+                icon_text Part Start
+=================================================== */
+#icon_text{
+    background: #ffffff;
+    padding: 70px 0;
+}
+.icon_text_container{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon_text_container .icon_text_item{
+    padding: 30px 10px 0;
+    width: 360px;
+    background: #ffffff;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: #000000;
+}
+.icon_text_container .icon_text_item .icon_info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icon_text_container .icon_text_item .image{
+    width: 68px;
+    height: 68px;
+    /* background: rgb(250, 205, 250); */
+}
+.icon_text_container .icon_text_item .image img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.icon_text_container .icon_text_item .image img:nth-child(2){
+    display: none;
+}
+.icon_text_container .icon_text_item .icon_info h3{
+    font-size: 21px;
+    font-weight: 600;
+}
+.icon_text_container .icon_text_item .text p{
+    text-align: left;
+    padding-top: 28px;
+    padding-bottom: 25px;
+}
+
+/* ===================================================
+                icon_text Part End
+=================================================== */
+/* ===================================================
+                mobile_digital Part Start
+=================================================== */
+#mobile_digital{
+    background: url(../images/Banner2.jpg) no-repeat center/cover;
+}
+#mobile_digital .overlay{
+    background: rgba(20, 13, 45, 0.6);
+    padding: 100px 0;
+}
+.mobile_digital_container{
+    margin: 0 auto;
+    /* background: #4b997f; */
+    text-align: center;
+}
+.mobile_digital_container h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 63px;
+}
+/* ===================================================
+                mobile_digital Part End
+=================================================== */
+/* ===================================================
+                mobile_digital Part End
+=================================================== */
+#service{
+    padding: 80px 0;
+    border-bottom: 1px solid var(--bottom_border_color);
+}
+#service .service_container .section_heading h2{
+    position: relative;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 26px;
+}
+#service .service_container .section_heading h2::after{
+    content: "";
+    width: 35px;
+    height: 4px;
+    background: var(--themecolor);
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transform: translateX(-50%);
+    rotate: calc(90deg);
+    border-radius: 30px;
+}
+.service_container .service_item{
+    display: flex;
+    justify-content: space-between;
+}
+.service_container .service_item .item{
+    width: 262px;
+    padding-top: 28px;
+    position: relative;
+}
+.service_container .service_item .item .image{
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+.service_container .service_item .item .image img{
+    width: 100%;
+    height: 290px;
+}
+.service_container .service_item .item .image .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(17, 17, 17, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+}
+.service_container .service_item .item .image .text{
+    background: var(--themecolor);
+    width: 100%;
+    padding: 18px 25px;
+    position: absolute;
+    
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.service_container .service_item .item .image .text h4{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 17px;
+}
+/* =================================== 
+            Service Smart TV 
+=================================== */
+.service_container .smart_tv_item{
+    display: flex;
+    justify-content: space-between;
+}
+.service_container .smart_tv_item .smart_tv{
+    width: 654px;
+    padding-top: 28px;
+    position: relative;
+}
+.service_container .smart_tv_item .smart_tv .image{
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+.service_container .smart_tv_item .smart_tv .image img{
+    width: 100%;
+    height: 290px;
+}
+.service_container .smart_tv_item .smart_tv .image .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(17, 17, 17, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+}
+.service_container .smart_tv_item .smart_tv .image .text{
+    background: var(--themecolor);
+    width: 100%;
+    padding: 18px 25px;
+    position: absolute;
+    
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.service_container .smart_tv_item .smart_tv .image .text h4{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 17px;
+}
+/* ===========================================
+            All Service
+==============================================*/
+.service_container .smart_tv_item .all{
+    width: 457px;
+    padding-top: 28px;
+    position: relative;
+}
+.service_container .smart_tv_item .all .image{
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+.service_container .smart_tv_item .all .image .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: var(--fontcolor);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+}
+.service_container .smart_tv_item .all .image .text{
+
+    width: 100%;
+    padding: 18px 25px;
+    position: absolute;    
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.service_container .smart_tv_item .all .image .text h4{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: right;
+    position: relative;
+    padding-bottom: 17px;
+}
+.service_container .smart_tv_item .all .image .text h4::after{
+   content: "";
+   background: var(--white);
+   width: 93px;
+   height: 3px;
+   border-radius: 20px;
+   position: absolute;
+   top: 80%;
+   right: 68px;
+}
+/* ===================================================
+                Service Part End
+=================================================== */
+/* ===================================================
+                Great Support Part Start
+=================================================== */
+#great_support{
+    padding-top: 40px;
+}
+.great_support_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 80px; */
+}
+.great_support_container .image{
+    max-width: 494px;
+    margin: 0 auto;
+}
+.great_support_container .info{
+    max-width: 555px;
+}
+.great_support_container .info h3{
+    font-weight: 600;
+    font-size: 33px;
+    padding: 20px 0;
+}
+.great_support_container .info p {
+    line-height: 24px;
+    padding-bottom: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--fontcolor);
+}
+.great_support_container .info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 73px;
+}
+.great_support_container .info ul li{
+    font-size: 15px;
+    font-weight: 300;
+    color: #616161;
+    font-family: var(--font_family_montserrat);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.great_support_container .info ul li span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #a5a5a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ===================================================
+                Great Support Part End
+=================================================== */
+/* ===================================================
+                contact Part Start
+=================================================== */
+#contact{
+    background: var(--themecolor)
+}
+.contact_container{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+.contact_container .left_side{
+    width: 50%;
+}
+.contact_container .left_side h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25px;
+}
+.contact_container .left_side p{
+    color: #615855;
+}
+.contact_container .right_side{
+    width: 50%;
+    text-align: right;
+}
+/* ===================================================
+                contact Part End
+=================================================== */
+/* ===================================================
+                portfolio Part Start
+=================================================== */
+#portfolio{
+    padding: 80px 0;
+}
+#portfolio .portfolio_container .section_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#portfolio .portfolio_container .section_heading .heading{
+    width: 278px;
+}
+#portfolio .portfolio_container .section_heading h2{
+    position: relative;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 26px;
+}
+#portfolio .portfolio_container .section_heading h2::after{
+    content: "";
+    width: 35px;
+    height: 4px;
+    background: var(--themecolor);
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transform: translateX(-50%);
+    rotate: calc(90deg);
+    border-radius: 30px;
+}
+.portfolio_container .section_heading .icon{
+    width: 82px;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+.portfolio_container .section_heading .icon i.fa-arrow-left-long{
+    color: var(--themecolor);
+}
+.portfolio_container .section_heading .icon i.fa-arrow-right-long{
+    color: var(--bottom_border_color);
+}
+.portfolio_container .portfolio_item{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio_container .portfolio_item .item{
+    width: 360px;
+    height: 310px;
+    padding-top: 28px;
+    position: relative;
+}
+.portfolio_container .portfolio_item .item .image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.portfolio_container .portfolio_item .item .image img{
+    width: 100%;
+    height: 100%;
+}
+.portfolio_container .portfolio_item .item .image .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(17, 17, 17, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+}
+/* ===================================================
+                portfolio Part End
+=================================================== */
+/* ===================================================
+                Blog Part Start
+=================================================== */
+#blog{
+    padding: 80px 0;
+    border-bottom: 1px solid var(--bottom_border_color);
+}
+#blog .blog_container .section_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#blog .blog_container .section_heading .heading{
+    width: 278px;
+}
+#blog .blog_container .section_heading h2{
+    position: relative;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 26px;
+}
+#blog .blog_container .section_heading h2::after{
+    content: "";
+    width: 35px;
+    height: 4px;
+    background: var(--themecolor);
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transform: translateX(-50%);
+    rotate: calc(90deg);
+    border-radius: 30px;
+}
+.blog_container .blog_item .item{
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--bottom_border_color);
+    padding-bottom: 40px;
+}
+.blog_container .blog_item .item .breaking a{
+    width: 750px;
+    color: var(--themecolor);
+    font-weight: 600;
+    font-size: 18px;
+}
+.blog_container .blog_item .item .october{
+    width: 165px;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-size: 16px;
+}
+.blog_container .blog_item .item .ferdi a{
+    width: 165px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--fontcolor);
+}
+.blog_container .blog_item .item .ferdi span{
+    width: 165px;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-size: 16px;
+}
+/* ===================================================
+                Blog Part End
+=================================================== */
+/* ===================================================
+                Footer Part Start
+=================================================== */
+footer{
+    background: var(--fontcolor);
+}
+.subscribe{
+    background: var(--themecolor);
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+}
+.subscribe .registar h3{
+    font-weight: 600;
+    font-size: 21px;
+    color: var(--white);
+}
+.subscribe .registar p{
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--white);
+}
+.subscribe .registar{
+    width: 360px;
+}
+.subscribe .subscribe_form{
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe .subscribe_form form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe .subscribe_form .input_item input{
+    width: 488px;
+    border: 1px solid #d3b1eb;
+    border-radius: 3px;
+    background: transparent;
+    font-family: var(--font_family_montserrat);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 12px;
+    text-align: left;
+}
+::placeholder{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
+}
+.subscribe .subscribe_form .input_item input:focus{
+    border: none;
+    /* background: #15a4fa; */
+    outline: none;
+    box-shadow: 1px 2px 7px 0 #1b2230;
+}
+.subscribe .subscribe_form .contact_button button{
+    padding: 15px 57px;
+}
+.footer_container{
+    display: flex;
+    padding: 73px 0;
+    border-bottom: 1px solid #1e224d;
+}
+.footer_container .footer_logo{
+    width: 555px;
+    padding-right: 16px;
+}
+.footer_container .footer_logo .footer_left_info{
+    padding: 20px 0;
+}
+.footer_container .footer_logo .footer_left_info p{
+    padding-bottom: 15px;
+    color: var(--white);
+    font-weight: 500;
+
+    /* padding-top: 30px; */
+}
+/* .item 2 */
+.footer_container .item{
+    width: 165px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.footer_container .item ul{
+    padding-top: 40px;
+}
+.footer_container .item ul li{
+    padding-bottom: 27px;
+}
+.footer_container .item ul li a{
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--white);
+}
+.footer_container .item ul li a:hover{
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--themecolor);
+}
+footer .copy{
+    background: var(--fontcolor);
+    padding: 20px 0;
+}
+footer .copy_container{
+    display: flex;
+    justify-content: space-between;
+}
+footer .copy .copy_container .left p{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 15px;
+}
+footer .copy .copy_container .right{
+    display: flex;
+    gap: 27px;
+}
+footer .copy .copy_container .right i{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 15px;
+}
+/* ===================================================
+                Footer Part end
+=================================================== */
+/* ===================================================
+                Brand Part End
+=================================================== */
+
+/* ===================================================
+                Footer Part End
+=================================================== */
